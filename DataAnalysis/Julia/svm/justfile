@@ -1,0 +1,4 @@
+run:
+    rm output/* || :
+    julia --project=. src/svm.jl
+    xdg-open output/* || :

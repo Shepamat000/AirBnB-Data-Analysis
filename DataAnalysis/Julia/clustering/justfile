@@ -1,0 +1,4 @@
+run:
+    rm output/* || :
+    julia --project=. src/clustering.jl
+    xdg-open output/* || :
